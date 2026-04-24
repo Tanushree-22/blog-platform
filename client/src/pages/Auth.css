@@ -1,0 +1,45 @@
+.auth-page {
+  min-height: calc(100vh - 64px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px 16px;
+  background: var(--bg-secondary);
+}
+.auth-card {
+  width: 100%; max-width: 440px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+}
+.auth-header { text-align: center; margin-bottom: 32px; }
+.auth-logo {
+  display: inline-block; font-family: var(--font-serif);
+  font-size: 1.4rem; font-weight: 700; color: var(--accent);
+  text-decoration: none; margin-bottom: 20px;
+}
+.auth-title { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+.auth-sub { font-size: 0.92rem; color: var(--text-muted); }
+.auth-form { display: flex; flex-direction: column; }
+.label-row { display: flex; justify-content: space-between; align-items: center; }
+.input-with-icon { position: relative; }
+.input-with-icon .form-input { padding-right: 44px; }
+.eye-btn {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; cursor: pointer; font-size: 1rem; padding: 4px;
+  color: var(--text-muted); transition: color var(--transition);
+}
+.eye-btn:hover { color: var(--text-primary); }
+.input-err { border-color: var(--accent) !important; }
+.auth-switch { text-align: center; margin-top: 24px; font-size: 0.9rem; color: var(--text-secondary); }
+.auth-switch a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.auth-switch a:hover { text-decoration: underline; }
+.auth-demo { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; }
+.demo-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.demo-btn {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 7px 16px;
+  font-size: 0.82rem; color: var(--text-secondary); cursor: pointer;
+  font-family: var(--font-sans); transition: all var(--transition);
+}
+.demo-btn:hover { border-color: var(--accent); color: var(--accent); }
