@@ -2,13 +2,7 @@ import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import './PostForm.css';
 
-const defaultForm = {
-  title: '',
-  content: '',
-  image: '',
-  tags: '',
-  excerpt: '',
-};
+
 
 export default function PostForm({ initialData = {}, onSubmit, loading, mode = 'create' }) {
   const [form, setForm] = useState({

@@ -24,7 +24,7 @@ const EyeIcon = () => (
 export default function BlogCard({ post, featured = false }) {
   const {
     title, slug, excerpt, image, author, tags, likes, views,
-    readTime, createdAt, commentCount
+    readTime, createdAt
   } = post;
 
   const likeCount = Array.isArray(likes) ? likes.length : 0;
