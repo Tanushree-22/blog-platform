@@ -48,7 +48,16 @@ app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/users', userRoutes);
 
+
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'Blog Platform API is running 🚀' });
+});
+
 app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', message: 'Blog Platform API is running 🚀' });
+});
+
+app.get('/api', (req, res) => {
   res.json({ status: 'ok', message: 'Blog Platform API is running 🚀' });
 });
 
